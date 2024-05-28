@@ -15,7 +15,6 @@ net_worth = st.text_input('Net Worth')
 	
 Selected_data = (age,annual_salary,credit_card_debt,net_worth)
 
-st.write(Selected_data)
 try:
     if st.button('predict'):
         reshaped_data = np.asarray(Selected_data, dtype=float).reshape(1, -1)
