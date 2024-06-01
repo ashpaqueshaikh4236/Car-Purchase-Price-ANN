@@ -4,7 +4,7 @@ from keras.models import load_model
 
 
 model = load_model('model.keras')
-
+st.write(model)
 
 st.title("Car Purchase Predictor")
 
