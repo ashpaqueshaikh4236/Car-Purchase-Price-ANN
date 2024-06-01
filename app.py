@@ -16,7 +16,7 @@ net_worth = st.text_input('Net Worth')
 Selected_data = (age,annual_salary,credit_card_debt,net_worth)
 
 if st.button('predict'):
-    reshaped_data = np.asarray(Selected_data, dtype=int).reshape(1, -1)
+    reshaped_data = np.asarray(Selected_data).reshape(1, -1)
 
     if '' in reshaped_data:
         st.warning('Please fill all values')
