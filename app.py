@@ -4,7 +4,6 @@ from keras.models import load_model
 
 
 model = load_model('model.keras')
-st.write(model)
 
 st.title("Car Purchase Predictor")
 
@@ -23,6 +22,6 @@ try:
             st.warning('Please fill all values')
         else:
             prediction = model.predict(reshaped_data)
-            st.success('Car Purchase Amount ' + str(prediction[0]))
+            st.success('Car Purchase Amount ' + str(prediction[0][0]))
 except Exception as e:
     st.warning(f'An error occurred: {e}')
