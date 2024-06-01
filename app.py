@@ -17,7 +17,7 @@ Selected_data = (age,annual_salary,credit_card_debt,net_worth)
 
 #try:
 if st.button('predict'):
-reshaped_data = np.asarray(Selected_data, dtype=float).reshape(1, -1)
+    reshaped_data = np.asarray(Selected_data, dtype=float).reshape(1, -1)
 
 if '' in reshaped_data:
     st.warning('Please fill all values')
