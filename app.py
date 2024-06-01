@@ -25,4 +25,4 @@ try:
             prediction = model.predict(reshaped_data)
             st.success('Car Purchase Amount ' + str(prediction[0]))
 except Exception as e:
-    st.warning(f'An error occurred: {e}'
+    st.warning(f'An error occurred: {e}')
